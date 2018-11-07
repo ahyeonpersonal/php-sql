@@ -1,0 +1,14 @@
+#1 : Displaying subject row from posts table
+select subject from posts 
+
+#2 : Displaying everything
+select * from posts
+
+#3 : Displaying id=1
+select * from posts where id='1'
+
+#4 : Displaying id='1' & subject='This is the subject'
+select * from posts where id='1' AND subject='This is the subject'
+
+#5 : Displaying either id='1' or subject='This is the subject'
+select * from posts where id='1' OR subject='This is the subject'
