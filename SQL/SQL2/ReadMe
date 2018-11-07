@@ -1,0 +1,7 @@
+#1
+insert into posts(subject, content, date) VALUES ('','','');
+We are going to insert data into posts table, especially subject, content, date column, about '','',''
+
+#2
+2018-11-8 10:26:04
+year-month-date  hour:minute:milliminute
