@@ -1,0 +1,24 @@
+to call global variable in local function, we need to call it by $GLOBALS[]
+
+#CASE1 : in this case, since 'x' is global, you would get error
+
+<?php
+  $x=5;
+  function something(){
+    echo $x;
+  }
+  
+  something();
+ ?> 
+ 
+ #CASE2 : attach $GLOBALS[x]
+ <?php
+  $x =5;
+  functon something(){
+    echo $GLOBALS['x'];
+  }
+  
+  something();
+ ?>
+  
+  
