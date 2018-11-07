@@ -1,0 +1,13 @@
+create table posts();
+=> creating table which name is 'posts'
+
+id int(11) not null PRIMARY KEY AUTO_INCREMENT
+=> not null : can't be balnk
+=> PRIMARY KEY : no other rows can have same number
+=> AUTO_INCREMENT : whenever new post comes in, id is goign to be incremented automatically
+
+subject varchar(128) not null
+=> varchar(128) : When subject is more than 128 characters, it won't be saved
+
+date datetime not null
+=> datetime : year,month,day,hours, minutes, seconds, millisecond
