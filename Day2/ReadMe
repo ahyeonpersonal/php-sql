@@ -1,0 +1,10 @@
+#1 When new file (contact.php) is added, I don't need to add every files but only in 'header.php'
+<?php
+  include 'header.php';
+?>
+
+
+#2 When new function (user-function) is created, and you want to put in every files, you can simply put in 'header.php'
+<?php
+  include "./function/user-functions.php";
+?>
