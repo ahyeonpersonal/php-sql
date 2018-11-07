@@ -1,0 +1,7 @@
+#1 method : what to do with the information 
+
+#2 get
+<form method="GET"> : pass it into the URL and we an see it inside the URL
+
+#3 post
+<form method="POST"> :pass it into the URL but we can't see it in the URL
