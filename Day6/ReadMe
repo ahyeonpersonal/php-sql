@@ -1,0 +1,5 @@
+To make the website remeber 'username' i have to input
+
+<?php
+  session_start();
+?>
