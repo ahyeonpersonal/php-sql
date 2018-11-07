@@ -1,0 +1,3 @@
+$_COOKIES : save information on user side / save information that is not as dangerous as hackers can attack /expired set time
+
+$_SESSION : save information on user & server side / session is end as soon as browser is ended / automatioc expire
