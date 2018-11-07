@@ -1,0 +1,8 @@
+#1 update every row's subject and content
+UPDATE posts
+SET subject='This is a test', content='This is the content'
+
+#1 update id='1' 's subject and content
+UPDATE posts
+SET subject='This is a test', content='This is the content'
+WHERE  id='1'
