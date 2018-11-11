@@ -1,0 +1,14 @@
+CREATE TABLE  users (
+    user_id int(11) AUTO_INCREMENT PRIMARY KEY  not null,
+    user_first varcahr(256) not null,
+    user_last varcahr(256) not null,
+    user_email varcahr(256) not null,
+    user_uid varcahr(256) not null,
+    user_pwd varcahr(256) not null,
+);
+
+INSER INTO  users (user_first, user_last, user_email, user_uid, user_pwd)
+    VALUES('Dini', 'Na', 'ahyeon.na1209@gmail.com','admin','test123);
+
+INSER INTO  users (user_first, user_last, user_email, user_uid, user_pwd)
+    VALUES('Giri', 'Gonsai', 'giri@gmail.com','Gpark','giri123);
