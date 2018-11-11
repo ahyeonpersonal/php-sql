@@ -1,0 +1,8 @@
+SELECT * FROM  posts ORDER BY id ASC
+
+SELECT * FROM  posts ORDER BY id DESC
+
+SELECT * FROM  posts ORDER BY subject ASC
+: order by alphabet 
+
+SELECT * FROM  posts ORDER BY subject DESC
