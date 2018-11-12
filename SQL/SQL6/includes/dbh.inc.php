@@ -5,5 +5,5 @@
   $dbPassword ="";
   $dbName="loginsystem";
   
-  $conn = mysqli_connect($dbServername, $dbUsername, $dvPassword, $dbName);
+  $conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName);
  
