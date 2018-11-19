@@ -1,0 +1,23 @@
+<pepared statement>
+1) create a pepared statement
+2) bind parameter
+3)execute query
+4)bind result query
+5)check result
+
+
+$sql = "SELECT uidUsers FROM users WHERE uidUser =? ";
+
+1) CREATER A PREPARED STATEMENT
+$stmt = mysqli_stmt_init($conn);
+
+if(mysqli_stmt_prepare($stmt, $sql)){
+  2) BIND PARAMETER
+  mysqli_stnt_bind_param($stmt, "s", $username);
+  3) EXECUTE QUERY
+  mysqli_stmt_excute($stmt);
+  4) BIND RESULT QUERY
+  mysqli_stmt_store_result($stmt);
+  5) CHECK RESULT
+  $resultCheck = mysqli_stmt_num_rows($stmt);
+}
