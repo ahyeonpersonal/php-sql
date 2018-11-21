@@ -1,0 +1,4 @@
+create login.inc.php which is pretty much similar to signup.inc.php
+
+session_start();
+and to check if session is actually working in whole webpages, session_start(); is included in 'header.php'
