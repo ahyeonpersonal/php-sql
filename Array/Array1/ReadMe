@@ -1,0 +1,8 @@
+inserting data in existing array
+
+$data = array();
+(1) $data[]="Dini";
+(2) array_push($data, "Dini2","Dini3","Dini4");
+
+print_r($data); 
+//print_r() : displaying information about a variable
