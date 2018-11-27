@@ -25,6 +25,14 @@ if(isset($_POST['submit'])){
     //(EXt : extension)
     $fileEXT = explode('.',$fileName);
     $fileActualExt = strtolower(end($fileExt));
+    /*
+        explode (".", $fileName) : devide $fileName by '.'
+        strtolower : make capital letter to lowercase
+        end($fileExt) : last element of $fileExt
+        
+        => devide $fileName by . => lowercase the behind part of "." 
+    */
+    
     
     $allowed = array('jpg','jpeg','png','pdf');
     
