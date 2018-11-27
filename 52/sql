@@ -1,0 +1,16 @@
+CREATE TABLE user (
+    id int(11) not null PRIMARY KEY AUTO_INCREMENT,
+    first varchar(246) not null,
+    last varchar(256) not null,
+    username varchar(256) not null,
+    password varchar(256) not null
+);
+
+//this is for if user already upload profile or not
+CREATE TABLE profileimg (
+    id int(11) not null PRIMARY KEY AUTO_INCREMENT,
+    userid int(11) not null,
+    status int(11) not null
+)
+
+status :  which user has this image status (if they uploaded or not yet)
