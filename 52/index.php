@@ -9,6 +9,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
       
@@ -27,16 +28,18 @@
               
               //if user upload profile img
               while($rowImg = mysqli_fetch_assoc($resultImg)){
-                  echo "<div>";
+                  echo "<div class='user-container'>";
                     if($rowImg['status'] == 0){
-                        echo "<img src='uploads/profile".$id."jpg'/>";
+                        echo "<img src='uploads/profile".$id."jpg?".mt_rand().'"/>";
+                        /* mt_rand() : since browser remember previous jpg name(cookie), 
+                        when user upload new image, it doesn't get change right away*/
                         //when user upload img, we need to change it as an uniqe id
                         
                     } else{
                         //haven't uploaded img yet, so default img
                         echo "<img src='uploads/profiledefault.jpg'/>";
                     }
-                    echo $row['username'];
+                    echo "<p>".$row['username']."</p>";
                   echo "</div>";
               }
           }
