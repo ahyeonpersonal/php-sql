@@ -12,3 +12,9 @@
         </form>
 	</body>
 </html>
+
+
+/*
+note : enctype='multipart/form-data' means taht no characters will be encoded. 
+That is why tyis type is used while uploading files to server
+*/
